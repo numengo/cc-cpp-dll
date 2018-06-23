@@ -1,0 +1,28 @@
+{
+    "authorName": "Cedric ROMAN",
+    "authorEmail": "roman@numengo.com",
+    "website": "http://www.numengo.com",
+    "githubUsername": "numengo",
+    "name": "Nameless",
+    "repoName": "cpp-{{ cookiecutter.name|lower|replace(' ','-') }}",
+    "packageName": "{{ cookiecutter.name|lower|replace(' ','_')|replace('-','_') }}",
+    "distributionName": "{{ cookiecutter.packageName|replace('_','-') }}",
+    "shortDescription": "An example package. Generated with cc-cpp-dll.",
+    "year": [
+        "now",
+        "2018",
+        "2017",
+        "2016",
+        "2015",
+        "2014",
+        "2013",
+        "2012",
+        "2011",
+        "2010"
+    ],
+    "version": "0.1.0",
+    "deps": "",
+    "macroPrefix": "{{ cookiecutter.packageName|upper }}",
+    "license": ["GNU General Public License v3", "NUMENGO", "BSD 2-Clause License", "BSD 3-Clause License", "MIT license", "ISC license", "Apache Software License 2.0"],
+    "RlmLicFeature": ""
+}
