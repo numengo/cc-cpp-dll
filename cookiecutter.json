@@ -24,5 +24,16 @@
     "deps": "",
     "macroPrefix": "{{ cookiecutter.packageName|upper }}",
     "license": ["GNU General Public License v3", "NUMENGO", "BSD 2-Clause License", "BSD 3-Clause License", "MIT license", "ISC license", "Apache Software License 2.0"],
-    "RlmLicFeature": ""
+    "RlmLicFeature": "",
+    "coveralls": ["no", "yes"],
+    "codecov": ["yes", "no"],
+    "landscape": ["no", "yes"],
+    "scrutinizer": ["no", "yes"],
+    "codacy" : ["no", "yes"],
+    "codeclimate" : ["no", "yes"],
+    "sphinx_theme": ["sphinx-rtd-theme", "sphinx-py3doc-enhanced-theme"],
+    "sphinx_doctest": ["no", "yes"],
+    "travis": ["yes", "no"],
+    "appveyor": ["yes", "no"],
+    "requiresio": ["yes", "no"]    
 }

@@ -4,16 +4,14 @@ workspace "{{cookiecutter.name}}"
 
     SolutionConfiguration()
     defines {
-        {% for dep in cookiecutter.deps %}
+        {% for dep in cookiecutter.deps.split(',') %}
         "{{dep|upper|replace(' ','_')|replace('-','_')}}_USE_DYN",
         {% endfor %}
         "{{cookiecutter.macroPrefix}}_USE_DYN"
     }
     local _exportSymbol = "{{cookiecutter.macroPrefix}}_MAKE_DLL"
     links { 
-        {% for dep in cookiecutterdeps %}
-        "{{deps}}"{{ "," if not loop.last }}
-        {% endfor %}
+        "{{cookiecutter.deps}}"
     }
     
     -- PROTECTED REGION ID({{cookiecutter.name}}.premake.solution) ENABLED START
